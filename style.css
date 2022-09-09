@@ -1,0 +1,79 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 260px;
+
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+   background-color: rgb(0, 0, 0);
+  height: 234px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+/* rating  */
+.fa-star{
+    color: rgb(211, 198, 173);
+}
+.checked {
+    color: orange;
+  }
+
+
+  .requirements-list{
+    list-style-type: disc;
+  }
+
+  #textButton{
+    width: 113px;
+
+  border: none;
+}
+
+.btn{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1070px) {
+     #course-card-lg{
+    display: none;
+    }
+     #course-card-sm{
+    display: block;
+    }
+     #home{
+    display: none;
+    }
+     #home-sm{
+    display: block;
+    }
+    .breadcrumb-sm{
+        display: block;
+    }
+  }
+@media only screen and (min-width: 1070px) {
+     #course-card-sm{
+    display: none;
+    }
+    #course-card-lg{
+        display: block;
+        }
+     #home-sm{
+    display: none;
+    }
+    #home{
+        display: block;
+        }
+        .breadcrumb-sm{
+            display: none;
+        }
+  }
